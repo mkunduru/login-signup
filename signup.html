@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>blossom | Sign up</title>
+		<link href="https://fonts.googleapis.com/css?family=Dosis:600%7cSource+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div class="box">
+				<div class="screen-image">
+					<img src="images/truck.png" alt="bike delivery">
+				</div>
+				<div class="form cf">
+					<div class="logo cf">
+						<img src="images/logo.png" alt="logo">
+						<p>blossom.com</p>
+					</div>
+					<p class="tagline">You send love, We send flowers!</p>
+					<ul id="progress-bar">
+						<li class="active">
+							<div class="progress-icon">
+								<div class="progress-line"></div>
+								<img src="images/person.png" width="15" height="15" alt="Personal Info">
+							</div>
+							Personal info
+						</li>
+						<li>
+							<div class="progress-icon">
+								<div class="progress-line"></div>
+								<img src="images/address.png" width="10" height="15" alt="Address">
+							</div>
+							Address
+						</li>
+						<li class="end">
+							<div class="progress-icon">
+								<div class="progress-line"></div>
+								<img src="images/login.png" width="23" height="23" alt="Login Info">
+							</div>
+							Login info
+						</li>
+					</ul>
+					<ul id="personal-info" class="user-info signup-section active first">
+						<li class="room">
+							<input name="firstname" type="text" placeholder="First name"/>
+						</li>
+						<li class="room">
+							<input name="lastname" type="text" placeholder="Last name"/>
+						</li>
+						<li class="room">
+							<input name="email" type="text" placeholder="Email"/>
+						</li>
+						<li class="room">
+							<input name="phone" type="text" placeholder="Phone"/>
+						</li>
+					</ul>
+					<ul id="address" class="user-info signup-section cf">
+						<li class="room">
+							<input name="street-address" type="text" placeholder="Address line 1"/>
+						</li>
+						<li class="room">
+							<input name="additional-address" type="text" placeholder="Address Line 2"/>
+						</li>
+						<li class="city-field room">
+							<input name="city" type="text" placeholder="City"/>
+						</li>
+						<li class="state-field room" onchange="colorFunction()">
+							<select id="state" class="grey">
+								<option value="" disabled selected>State</option>
+								<option class="black">FL</option>
+								<option class="black">MA</option>
+								<option class="black">AZ</option>
+							</select>
+						</li>
+						<li class="zip-field room">
+							<input name="zip" type="text" placeholder="Zipcode" maxlength="5"/>
+						</li>
+					</ul>
+					<ul id="login-info" class="user-info signup-section last">
+						<li class="room">
+							<input name="username" type="text" placeholder="Username"/>
+						</li>
+						<li class="room">
+							<input name="password" type="password" placeholder="Password"/>
+						</li>
+						<li class="room">
+							<input name="confirm-password" type="password" placeholder="Retype Password"/>
+						</li>
+					</ul>
+					<a id="back" class="redirect left" href="#">Back</a>
+					<div id="continue" class="button">	
+						<input name="submit" type="submit" value="Continue"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img class="leaves" src="images/leaves.png" alt="leaves">
+		<img class="flower" src="images/flower.png" alt="flower">
+	</body>
+</html>

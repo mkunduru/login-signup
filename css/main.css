@@ -1,0 +1,435 @@
+/* 
+---------------------------------------------
+this code resets css styles for all elements
+---------------------------------------------
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+---------------------------------------------
+Global Styles
+---------------------------------------------
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#container {
+	width: 1280px;
+	margin: 0 auto;
+	font: 300 18px/30px 'Source Sans Pro', sans-serif;
+	position: relative;
+	padding: 64px 70px;
+}
+
+/* 
+---------------------------------------------
+Clear-fix
+---------------------------------------------
+*/
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 
+---------------------------------------------
+Links
+---------------------------------------------
+*/
+a {
+	text-decoration: none;
+}
+
+/* 
+---------------------------------------------
+Login page
+---------------------------------------------
+*/
+
+.leaves {
+	position: fixed;
+    right: -140px;
+    top: -40px;
+}
+
+.flower {
+	position: fixed;
+    right: -115px;
+    bottom: -60px;
+}
+
+.box {
+	position: relative;
+	z-index: 10;
+	width: 1140px;
+	height: 620px;
+	box-shadow: 13px 1px 15px 0px rgba(0,0,0,0.24);
+	background-color: #fff;
+}
+
+.screen-image {
+	width: 50%;
+	padding: 92px 0 0 128px;
+	float: left;
+}
+
+.form {
+	float: left;
+	margin-left: 110px;
+}
+
+.logo {
+	margin-top: 50px;
+}
+
+.logo img {
+	float: left;
+}
+
+.logo p {
+	float: left;
+	font: 600 36px/42px 'Dosis', sans-serif;
+	margin-top: 20px;
+}
+
+.tagline {
+	margin-left: 42px;
+}
+
+ul.user-info {
+	margin-top: 50px;
+}
+
+ul.user-info.signup-section{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	height: 250px;
+	width: 280px;
+}
+
+.user-info li {
+	padding-left: 10px;
+	position: relative;
+}
+
+.user-info li:before {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0,0,0,0.1);
+	content: "";
+	transition: width 0s;
+}
+
+.user-info li:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 1px;
+	background-color: rgba(0,0,0,0.1);
+	content: "";
+	transition: width 0s;
+}
+
+.user-info li.current:before {
+	width: 0;
+}
+
+.user-info li.current:after {
+	transition: width 0.5s;
+	background-color: #ec1322;
+	width: 100%;
+}
+
+.user-info input {
+	font: 300 18px/30px 'Source Sans Pro', sans-serif;
+	border-style: none;
+}
+
+.username img, .password img {
+	display: none;
+}
+
+.username img.current, .password img.current {
+	display: inline;
+}
+
+.alt-login img {
+	display: none;
+}
+
+.alt-login img.current {
+	display: inline;
+}
+
+li.room {
+	margin-bottom: 30px;
+}
+
+.username input {
+	padding-left: 15px;
+} 
+
+.password input {
+	padding-left: 10px;
+}
+
+.password-remember {
+	float: left;
+}
+
+.block {
+	font: 200 16px/24px 'Source Sans Pro', sans-serif;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.block a {
+	color: #000;
+	margin-left: 40px;
+}
+
+.block a:hover {
+	color: #ec1322;
+}
+
+.button input {
+	border-style: none;
+	background-color: #ec1322;
+	color: #fff;
+	font: 400 20px/26px 'Source Sans Pro', sans-serif;
+	cursor: pointer;
+}
+
+.button {
+	background-color: #ec1322;
+	border-radius: 25px;
+	padding: 5px 19px 5px 25px;
+	float: left;
+	cursor: pointer;
+}
+
+.button:hover input, .button:hover {
+	background-color: #ff0000;
+}
+
+.redirect {
+	display: inline-block;
+	font: 400 20px/26px 'Source Sans Pro', sans-serif;
+	color: #ec1322;
+	margin-left: 35px;
+	margin-top: 7px;
+	float: left;
+	width: 40%;
+}
+
+.redirect:hover {
+	color: #ff0000;;
+}
+
+.redirect.left {
+	margin-left: 12px;
+}
+
+.alt-login {
+	margin-top: 50px;
+}
+
+.alt-login p {
+	float: left;
+}
+
+.alt-login ul {
+	float: left;
+	margin-left: 20px;
+}
+
+.alt-login li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+input:focus {
+	outline: none;
+}
+
+/* 
+---------------------------------------------
+Progress Bar
+---------------------------------------------
+*/
+
+#progress-bar {
+	margin: 30px 0 40px 0;
+	overflow: hidden;
+	width: 120%;
+}
+
+#progress-bar li {
+	list-style-type: none;
+	color: #AAA;
+	font-size: 14px;
+	font-weight: 400;
+	width: 33%;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+
+.progress-icon {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: #AAA;
+	margin-left: 45px;
+}
+
+.progress-line {
+	position: relative;
+	width: 120px;
+	height: 2px;
+	background-color: #AAA;
+	left: -110px;
+	top: 12px;
+	z-index: -10;
+}
+
+li.end .progress-line {
+	width: 200px;
+}
+
+#progress-bar li.active {
+	color: #ec1322;
+}
+
+li.active .progress-icon {
+	background-color: #ec1322;
+}
+
+li.active .progress-line {
+	background: #ec1322;
+}
+
+
+/* 
+---------------------------------------------
+Sign Up
+---------------------------------------------
+*/
+
+ul.active {
+	display: block;
+}
+
+#login-info, #address {
+	display: none;
+}
+
+select {
+	background: none;
+	border: 0;
+	width: 100px;
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    font: 300 18px/30px 'Source Sans Pro', sans-serif;
+    background: transparent url("../images/arrow.png") no-repeat 65px 13px;
+}
+
+select:focus {
+	outline: none;
+}
+
+.grey {
+	color: #AAA;
+}
+
+.black {
+	color: #000;
+}
+
+.city-field {
+	display: inline-block;
+	width: 55%; 
+	margin-right: 8%;
+}
+
+.state-field {
+	display: inline-block;
+	width: 35%;
+}
+
+.zip-field {
+	width: 30%;
+}
+
+#continue {
+	float: right;
+	padding: 5px 19px 5px 19px;
+}
+
+#back {
+	display: none;
+}
+
+#back.active {
+	display: inline;
+}
